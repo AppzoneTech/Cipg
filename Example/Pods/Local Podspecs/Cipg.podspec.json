@@ -1,0 +1,22 @@
+{
+  "name": "Cipg",
+  "version": "0.1.0",
+  "summary": "A short description of Cipg.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/AppzoneTech/Cipg",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "AppzoneTech": "oladosulekan@yahoo.com"
+  },
+  "source": {
+    "git": "https://github.com/AppzoneTech/Cipg.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Cipg/Classes/**/*"
+}

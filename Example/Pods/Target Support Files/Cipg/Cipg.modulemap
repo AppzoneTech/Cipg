@@ -1,0 +1,6 @@
+framework module Cipg {
+  umbrella header "Cipg-umbrella.h"
+
+  export *
+  module * { export * }
+}

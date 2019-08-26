@@ -1,0 +1,16 @@
+PODS:
+  - Cipg (0.1.0)
+
+DEPENDENCIES:
+  - Cipg (from `../`)
+
+EXTERNAL SOURCES:
+  Cipg:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Cipg: 389058d0d0aa04db484a053dc39b867e8c944e9a
+
+PODFILE CHECKSUM: 7599f5fa2416d61eab55593f4b1f7013f4a74cd3
+
+COCOAPODS: 1.7.5

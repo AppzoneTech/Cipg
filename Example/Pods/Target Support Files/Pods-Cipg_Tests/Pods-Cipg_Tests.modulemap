@@ -1,0 +1,6 @@
+framework module Pods_Cipg_Tests {
+  umbrella header "Pods-Cipg_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
