@@ -16,7 +16,7 @@ class ViewController: UIViewController, CipgDelegate{
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        cipgSdk = CipgSdk(paymentUrl: "baseUrl should be passed here")
+        cipgSdk = CipgSdk(baseUrl: "http://paygatetest.fidelitybank.ng/CIPGForCard")
         self.setUpViews()
     }
     

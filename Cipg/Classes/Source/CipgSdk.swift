@@ -12,8 +12,10 @@ import UIKit
 public class CipgSdk {
     public var delegate: CipgDelegate? = nil;
     
-   public init(paymentUrl:String) {
-       AppState.paymentUrl = paymentUrl
+   public init(baseUrl:String) {
+    
+     print("Initing lib with base url \(baseUrl)")
+       AppState.baseUrl = baseUrl
     }
     
     public func pay(view :UIViewController, charge: Charge){

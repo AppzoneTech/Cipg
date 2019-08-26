@@ -9,10 +9,10 @@
 import Foundation
 
 public struct Charge {
-    public init(){}
+  public init(){}
     
-   public var orderId: String = ""
-   public var merchantId: String = ""
+  public var orderId: String = ""
+  public var merchantId: String = ""
   public  var customerEmail: String = ""
   public  var currencyCode: String = ""
   public  var productName :String = ""

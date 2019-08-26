@@ -65,7 +65,15 @@ class WebViewController : UIViewController, UIWebViewDelegate {
         view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         cancelButton.addTarget(self, action: #selector(self.popView), for: .touchUpInside)
         
-        var request  = URLRequest(url: (URL(string: Constants.START_URL) ?? nil)!)
+        print("AppState base url")
+        print(AppState.baseUrl)
+        if(AppState.baseUrl == "" || AppState.baseUrl == "baseUrl should be passed here"){
+            print("Invalid base url set")
+            AppState.baseUrl = "https://wromgurl.com"
+        }
+        
+        let url = "\(AppState.baseUrl)\(Constants.PAYMENT_URL)"
+        var request  = URLRequest(url: (URL(string: url)!))
         let amount = AppState.amount.addingPercentEncoding(withAllowedCharacters: .alphanumerics)
         let params = "mercId=\(AppState.merchantId)&currCode=\(AppState.currencyCode)&amt=\(amount ?? "")&orderId=\(AppState.orderId)&prod=\(AppState.prod)&source=\(AppState.source)&email=\(AppState.customerEmail)"
         print("Loading webpage with param")
@@ -110,6 +118,7 @@ class WebViewController : UIViewController, UIWebViewDelegate {
     
     @objc func popView(){
         print("Pop View clicked")
+        ProgressHUD.dismiss()
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -125,7 +134,7 @@ class WebViewController : UIViewController, UIWebViewDelegate {
          let url = webView.request?.url
         
         //This url is to be handled
-        if url?.absoluteString.contains("SDKPaymentOutcome.aspx") ?? false{
+        if url?.absoluteString.contains(Constants.OUTCOME_URL) ?? false{
             print("Sdk outcome query")
             let transactref = url?.queryDictionary?[Constants.TRANSACTION_REF_KEY]
             let _ = url?.queryDictionary?[Constants.ORDER_ID_KEY]
@@ -145,7 +154,7 @@ class WebViewController : UIViewController, UIWebViewDelegate {
                 ]
                 
                 ProgressHUD.show("Validating transaction reference, please wait...")
-                Alamofire.request("\(Constants.BASE_URL)\(Constants.VALIDATE_TRANSACTION_PATH)", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
+                Alamofire.request("\(AppState.baseUrl)\(Constants.VALIDATE_TRANSACTION_PATH)", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
                     ProgressHUD.dismiss()
                     print("Validation result")
                     debugPrint(response)
