@@ -17,5 +17,5 @@ class AppState {
     static var prod = ""
     static var source = "sdk"
     
-    static var paymentUrl = ""
+    static var baseUrl = ""
 }
