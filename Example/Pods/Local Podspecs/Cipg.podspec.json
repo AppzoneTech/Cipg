@@ -1,15 +1,14 @@
 {
   "name": "Cipg",
   "version": "0.1.0",
-  "summary": "A short description of Cipg.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Cipg IOS library for Consolidate payment gateway",
   "homepage": "https://github.com/AppzoneTech/Cipg",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "AppzoneTech": "oladosulekan@yahoo.com"
+    "AppzoneTech": "tech.users@gmail.com"
   },
   "source": {
     "git": "https://github.com/AppzoneTech/Cipg.git",
@@ -18,5 +17,16 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "Cipg/Classes/**/*"
+  "source_files": "Cipg/Classes/**/*",
+  "dependencies": {
+    "ProgressHUD": [
+
+    ],
+    "Alamofire": [
+      "~> 4.7"
+    ],
+    "SwiftyJSON": [
+      "~> 4.0"
+    ]
+  }
 }

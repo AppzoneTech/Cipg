@@ -1,15 +1,30 @@
 PODS:
-  - Cipg (0.1.0)
+  - Alamofire (4.8.2)
+  - Cipg (0.1.0):
+    - Alamofire (~> 4.7)
+    - ProgressHUD
+    - SwiftyJSON (~> 4.0)
+  - ProgressHUD (2.60)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Cipg (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ProgressHUD
+    - SwiftyJSON
 
 EXTERNAL SOURCES:
   Cipg:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Cipg: 389058d0d0aa04db484a053dc39b867e8c944e9a
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Cipg: 943d6f6fbd634b06aa570d48bc9670fcbe7916c9
+  ProgressHUD: 4e4efbaf4f5de8bd32e0c4c3b6644a90ea1a8c3e
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
 PODFILE CHECKSUM: 7599f5fa2416d61eab55593f4b1f7013f4a74cd3
 
