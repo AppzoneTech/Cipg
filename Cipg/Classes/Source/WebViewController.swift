@@ -154,7 +154,7 @@ class WebViewController : UIViewController, UIWebViewDelegate {
                 ]
                 
                 ProgressHUD.show("Validating transaction reference, please wait...")
-                Alamofire.request("\(AppState.baseUrl)\(Constants.VALIDATE_TRANSACTION_PATH)", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
+                Alamofire.request("\(AppState.baseUrl)\(Constants.BASE_API_URL)\(Constants.VALIDATE_TRANSACTION_PATH)", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
                     ProgressHUD.dismiss()
                     print("Validation result")
                     debugPrint(response)
@@ -177,6 +177,7 @@ class WebViewController : UIViewController, UIWebViewDelegate {
                     
                     if let error = response.error{
                         print("Error occurred")
+                        print("error.localizedDescription")
                         self.cipgDelegate?.onError(msg: error.localizedDescription)
                     }
                     
