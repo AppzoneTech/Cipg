@@ -32,8 +32,7 @@ import Cipg
 ```
 
 ###  Full sample
-```
-swift
+```swift
 
 import UIKit
 import Cipg
