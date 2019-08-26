@@ -82,7 +82,7 @@ payButton.addTarget(self, action: #selector(self.actionPay), for: .touchUpInside
 var charge = Charge();
 charge.amount = "2000"
 charge.currencyCode = "566"
-charge.customerEmail = "jl1aw1al@appzonegroup.com"
+charge.customerEmail = "test@test"
 charge.merchantId = "00037"
 charge.productName = "TestMerchant"
 charge.orderId  = "9163090"
