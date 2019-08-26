@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Cipg_Example' do
+  pod 'Cipg', :path => '../'
+
+  target 'Cipg_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
