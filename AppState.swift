@@ -1,9 +1,8 @@
 //
 //  AppState.swift
-//  cipgSdk_Example
+//  Cipg
 //
-//  Created by Macbook Air on 19/08/2019.
-//  Copyright © 2019 CocoaPods. All rights reserved.
+//  Created by Macbook Air on 26/08/2019.
 //
 
 import Foundation
@@ -19,3 +18,4 @@ class AppState {
     
     static var paymentUrl = ""
 }
+

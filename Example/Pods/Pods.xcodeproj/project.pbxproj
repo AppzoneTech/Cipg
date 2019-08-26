@@ -45,11 +45,11 @@
 		BEE6B677416CA71C981D1D3F60B18C96 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8518EE2019589F1BFB0AF867E0C9564 /* Alamofire.swift */; };
 		C0182A2CAC5BBABB282A1CAE7F925698 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B707D9926069560727B56C8F018455 /* SwiftyJSON.framework */; };
 		D1BAA6062313D01F0014AC34 /* CipgDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAA6002313D01F0014AC34 /* CipgDelegate.swift */; };
-		D1BAA6072313D01F0014AC34 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAA6012313D01F0014AC34 /* AppState.swift */; };
 		D1BAA6082313D01F0014AC34 /* CipgSdk.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAA6022313D01F0014AC34 /* CipgSdk.swift */; };
 		D1BAA6092313D01F0014AC34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAA6032313D01F0014AC34 /* Constants.swift */; };
 		D1BAA60A2313D01F0014AC34 /* Charge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAA6042313D01F0014AC34 /* Charge.swift */; };
 		D1BAA60B2313D01F0014AC34 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAA6052313D01F0014AC34 /* WebViewController.swift */; };
+		D1BAA60D2313E2CB0014AC34 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAA60C2313E2CB0014AC34 /* AppState.swift */; };
 		D3D8C379C6E4FB487E5ABD6800AD7B7E /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B68CD52D321AECA994B20553FB694BF /* DispatchQueue+Alamofire.swift */; };
 		D65C254F5ABF2CB5ECEE50FE8F8E1A80 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BE786D4DE1BD262D40CEA0D9D2C18 /* Response.swift */; };
 		E3747EC31FCCA97D75A81FC700CF7E24 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E2196C8F0B3394E2FDD76A6EA3461 /* ResponseSerialization.swift */; };
@@ -186,11 +186,11 @@
 		C765649C42C75E00BDAA30C4F05D2B5B /* Pods-Cipg_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cipg_Example-frameworks.sh"; sourceTree = "<group>"; };
 		C9F9BFB29A83178444A5DA29D939D79E /* ProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		D1BAA6002313D01F0014AC34 /* CipgDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CipgDelegate.swift; path = Cipg/Classes/Source/CipgDelegate.swift; sourceTree = "<group>"; };
-		D1BAA6012313D01F0014AC34 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppState.swift; path = Cipg/Classes/Source/AppState.swift; sourceTree = "<group>"; };
 		D1BAA6022313D01F0014AC34 /* CipgSdk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CipgSdk.swift; path = Cipg/Classes/Source/CipgSdk.swift; sourceTree = "<group>"; };
 		D1BAA6032313D01F0014AC34 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Cipg/Classes/Source/Constants.swift; sourceTree = "<group>"; };
 		D1BAA6042313D01F0014AC34 /* Charge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Charge.swift; path = Cipg/Classes/Source/Charge.swift; sourceTree = "<group>"; };
 		D1BAA6052313D01F0014AC34 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = Cipg/Classes/Source/WebViewController.swift; sourceTree = "<group>"; };
+		D1BAA60C2313E2CB0014AC34 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		D40BFF7F75CCA5FB6F51FB6367F79167 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
 		DBC7A597CE2AAE76BD8A58682BBDA25B /* Cipg.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cipg.modulemap; sourceTree = "<group>"; };
 		E182AEBCFC200394A42F68FC4906CC36 /* Cipg.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Cipg.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -297,7 +297,7 @@
 		29E7A1E2D28613801D2AA67D7A750453 /* Cipg */ = {
 			isa = PBXGroup;
 			children = (
-				D1BAA6012313D01F0014AC34 /* AppState.swift */,
+				D1BAA60C2313E2CB0014AC34 /* AppState.swift */,
 				D1BAA6042313D01F0014AC34 /* Charge.swift */,
 				D1BAA6002313D01F0014AC34 /* CipgDelegate.swift */,
 				D1BAA6022313D01F0014AC34 /* CipgSdk.swift */,
@@ -779,9 +779,9 @@
 				D1BAA6082313D01F0014AC34 /* CipgSdk.swift in Sources */,
 				64A6187C4F9C8E884B750B089F733A46 /* Cipg-dummy.m in Sources */,
 				D1BAA60A2313D01F0014AC34 /* Charge.swift in Sources */,
+				D1BAA60D2313E2CB0014AC34 /* AppState.swift in Sources */,
 				0C1500CCB99422B6EB7438EA7EA68A45 /* ReplaceMe.swift in Sources */,
 				D1BAA6062313D01F0014AC34 /* CipgDelegate.swift in Sources */,
-				D1BAA6072313D01F0014AC34 /* AppState.swift in Sources */,
 				D1BAA6092313D01F0014AC34 /* Constants.swift in Sources */,
 				D1BAA60B2313D01F0014AC34 /* WebViewController.swift in Sources */,
 			);

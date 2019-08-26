@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		080F3CA4CAD3D60571C60A79 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		080F3CA4CAD3D60571C60A79 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		38F3BBB4D03740C5865B952B /* Pods-Cipg_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cipg_Example.debug.xcconfig"; path = "Target Support Files/Pods-Cipg_Example/Pods-Cipg_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		58E84A0E8BA7DC868C1E4B27 /* Pods-Cipg_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cipg_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Cipg_Tests/Pods-Cipg_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Cipg_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cipg_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,10 +43,10 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		618EAC7E52C7EBB9CA12D578 /* Pods_Cipg_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cipg_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF74F82D854BAB994522764 /* Pods-Cipg_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cipg_Tests.release.xcconfig"; path = "Target Support Files/Pods-Cipg_Tests/Pods-Cipg_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B2E15E0FF6F4C53811F9D952 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B2E15E0FF6F4C53811F9D952 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B6F1D810A64CE272A6CF8484 /* Pods_Cipg_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cipg_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD8A71E6979E620B06FDAB5 /* Pods-Cipg_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cipg_Example.release.xcconfig"; path = "Target Support Files/Pods-Cipg_Example/Pods-Cipg_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F74C39DD94281DAB8D4E01EB /* Cipg.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Cipg.podspec; path = ../Cipg.podspec; sourceTree = "<group>"; };
+		F74C39DD94281DAB8D4E01EB /* Cipg.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Cipg.podspec; path = ../Cipg.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 				58E84A0E8BA7DC868C1E4B27 /* Pods-Cipg_Tests.debug.xcconfig */,
 				7FF74F82D854BAB994522764 /* Pods-Cipg_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
