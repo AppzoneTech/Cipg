@@ -108,7 +108,7 @@ print(msg)
 
 ## Author
 
-AppzoneTech, tech.users@gmail.com
+AppzoneTech, techusers.user05@gmail.com
 
 ## License
 

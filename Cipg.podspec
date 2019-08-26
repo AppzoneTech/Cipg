@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/AppzoneTech/Cipg'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'AppzoneTech' => 'tech.users@gmail.com' }
+  s.author           = { 'AppzoneTech' => 'techusers.user05@gmail.com' }
   s.source           = { :git => 'https://github.com/AppzoneTech/Cipg.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
