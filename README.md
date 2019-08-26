@@ -19,7 +19,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 Add the pod like any other pod and run pod install
 
 ```ruby
-pod 'Cipg'
+pod 'Cipg', '~> 0.1.2'
 ```
 
 ## Usage
