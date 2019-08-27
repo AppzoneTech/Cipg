@@ -154,7 +154,9 @@ class WebViewController : UIViewController, UIWebViewDelegate {
                 ]
                 
                 ProgressHUD.show("Validating transaction reference, please wait...")
-                Alamofire.request("\(AppState.baseUrl)\(Constants.BASE_API_URL)\(Constants.VALIDATE_TRANSACTION_PATH)", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
+                let validationUrl = "\(AppState.baseUrl)\(Constants.BASE_API_URL)\(Constants.VALIDATE_TRANSACTION_PATH)"
+                print("validation url => \(validationUrl)")
+                Alamofire.request(validationUrl, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
                     ProgressHUD.dismiss()
                     print("Validation result")
                     debugPrint(response)

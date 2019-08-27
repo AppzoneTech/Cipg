@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Cipg'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'Cipg IOS library for Consolidate payment gateway'
 
   s.homepage         = 'https://github.com/AppzoneTech/Cipg'
